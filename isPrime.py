@@ -116,4 +116,27 @@ def firstnegative(arr, k):
 a = firstnegative([1,3,-1,-3,5,3,6,7],3)
 
 
-def bestsellstock(arr):
+def find_max_sliding_window(nums, window_size):
+    # your code will replace this placeholder return statement
+    queue = []
+    i = 0
+    result =[]
+    #10,6,9,1,-3
+    for j in range(len(nums)):
+        while len(queue) >0 and nums[j] > queue[0]:
+            queue.remove(queue[0])
+        queue.append(nums[j]) 
+        if j-i+1 == window_size:
+            # 
+            result.append(queue[0])
+            if queue[0] == nums[i]:
+                queue.remove(queue[0])
+
+            i = i+1
+            while queue and queue[0] < queue[-1]:
+                queue.remove(queue[0])
+
+            # Check if there are smaller number in the starting of window
+
+            
+    return result
