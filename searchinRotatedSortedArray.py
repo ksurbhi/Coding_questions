@@ -18,7 +18,7 @@ class RotatedSortedArray:
                     end = mid-1
                 else:
                     start = mid+1
-            # search in right sorted array
+            # Search in right sorted array
             elif self.arr[mid] <= self.arr[end]:
                 if self.arr[mid] <= self.target <= self.arr[end]:
                     start = mid+1
