@@ -4,6 +4,7 @@ class Solution:
         high = 1
         while low <= high:
             if arr[high] < key:
+                strat = high
                 high *= 2
             else:
                 res = self.binary_search(arr, low, high, key)
