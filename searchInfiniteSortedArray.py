@@ -1,5 +1,5 @@
 class Solution:
-    def infinite_binary_search(self, arr, key):
+    def infinite_search(self, arr, key):
         low = 0
         high = 1
         while low <= high:
