@@ -25,6 +25,6 @@ class ThreeSum:
 arr = [-1,0,1,2,-1,-4]
 target = 0
 class_obj = ThreeSum(arr, target)
-res = class_obj.threeSum()
-print(res)
+result = class_obj.threeSum()
+print(result)
 
