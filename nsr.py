@@ -19,7 +19,7 @@ class Solution:
         res.reverse()
         return res
 
-
+# Testing Code
 arr = [2,1,4,2]       
 cls_obj = Solution()
 result = cls_obj.NSR(arr)
